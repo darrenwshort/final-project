@@ -31,17 +31,18 @@ div.wrapper {
 
 div#input-section {
     width: 60%;
-    border: 2px solid yellow;
+    border: 2px solid beige;
+    border-radius: 10px;
     margin: auto;
     padding-bottom: 10px;
 }
 
 div#results-div {
-    width: 900px;
+    width: 800px;
     /* min-height: 300px; */
     padding: 20px;
     margin: auto;
-    border: 5px solid greenyellow;
+    /* border: 2px dotted white; */
 }
 
 /* search field */
@@ -51,17 +52,14 @@ input#searchterm {
     font-family: monospace;
     font-size: 20px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 5px;
+    padding: 2px;
     background-color: beige;
 }
 
-/* 'search' button */
-button#input-btn {
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-right: 380px;
+input#searchterm:focus {
+    outline: none;
 }
 
 label {
