@@ -15,27 +15,35 @@ document.addEventListener("DOMContentLoaded", () => {
         let str = document.getElementById('searchterm').value;
         console.log(str);
         if (str.length == 0) {
-          document.getElementById("results-div").innerHTML = "";
+          let results_div = document.createElement('div');
+          //results_div.classList.add('results-div');
+          results_div.innerHTML = "Nothing Yet...";
           return;
         } else {
           var xmlhttp = new XMLHttpRequest();
           console.log(xmlhttp);
+          
           xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-              document.getElementById("results-div").innerHTML = this.responseText;
-              console.log("READY!");
+              let results_div = document.getElementById('results-div');
+              results_div.innerHTML = this.responseText;
             }
-        };
-        xmlhttp.open("GET", 'findresource.php?searchterm=' + str, true);
-        xmlhttp.send();
+          };
+          xmlhttp.open("GET", 'findresource.php?searchterm=' + str, true);
+          xmlhttp.send();
         }
     }
 
     let search_field = document.getElementById('searchterm');
+
     // on each 'key up' stroke, kick off search via findResource().
     search_field.addEventListener("keyup", () => {
         findResource();
     });
+    
+    
+
+
     
 
 });
