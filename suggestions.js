@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
               document.getElementById("results-div").innerHTML = this.responseText;
             }
           };
-          xmlhttp.open("GET", "getresource.php?r=" + str, true);
+          xmlhttp.open("GET", "findresource.php?r=" + str, true);
           xmlhttp.send();
         }
     }
