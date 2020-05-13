@@ -1,9 +1,19 @@
-<html>
-  <head>
-    <title>Search Carl's Resources</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+/*-----------------------------------
+ * ViT 4.20.20 Galvanize Course
+ * Student:     Darren Short
+ * Assignment:  Final Project
+ * File:        findresource.php
+ *-----------------------------------
+ */
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Carl's Resources</title>
+</head>
 <body>
-
+  
 <?php
 
 if(isset($GET['r']) && $GET['r'] != '')
