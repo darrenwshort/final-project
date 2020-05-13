@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function findResource() {
         let search = document.getElementById("searchterm");
         let str = search.value;
+
         if (str.length == 0) {
           document.getElementById("results-div").innerHTML = "";
           return;
