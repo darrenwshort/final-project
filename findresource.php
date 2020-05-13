@@ -14,7 +14,7 @@ if(isset($_GET['searchterm']))
   echo "<ol>";
   foreach($json_data as $data){
     if(in_array($str, $data["keywords"])){
-      echo "<li><a target=\"_blank\" href='" . $data["url"] . "' />" . $data["url"];
+      echo "<li><a class='links' target='_blank' href='" . $data["url"] . "'>" . $data["url"] . '</a>(<span class="italicize">' . $data["keywords"][0] . '</span>)</li>';
     }
   }
   echo "</ol>";

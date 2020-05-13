@@ -3,7 +3,7 @@ Vit Front End Web Dev Galvanize Final Project
 
 
 ## Goal
-Create suggestion box/field for searching on Carl Corsini code resources.
+Create search/link suggestion box/field for searching on Carl Corsini code resources.
 
 ## Purpose
 Provide easier access to the plethora of code resources of Carl's from one interface to my class cohorts.
