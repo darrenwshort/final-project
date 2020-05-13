@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-/*-----------------------------------
+/* -----------------------------------
  * ViT 4.20.20 Galvanize Course
  * Student:     Darren Short
  * Assignment:  Final Project
  * File:        findresource.php
- *-----------------------------------
+ * -----------------------------------
  */
 <head>
   <meta charset="UTF-8">
@@ -16,19 +16,13 @@
   
 <?php
 
-if(isset($GET['r']) && $GET['r'] != '')
+if(isset($GET['searchterm']) && $GET['searchterm'] != '')
 {
   // text file contains excerpt from CRC catalog
   $file = 'suggestions.json';
 
-  // open file for reading
-  $fh = fopen($file, "r");
-
-
-  // $rsrc = "";
-  // $resources = array();
   // read json into array.
-  $json = file_get_contents('./suggestions.json');
+  $json = file_get_contents($file);
   $json_data = json_decode($json, true);
   print_r($json_data);
 
