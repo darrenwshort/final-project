@@ -13,19 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // func to search for resource
     function findResource() {
         let str = document.getElementById('searchterm').value;
-
+        console.log(str);
         if (str.length == 0) {
           document.getElementById("results-div").innerHTML = "";
           return;
         } else {
           var xmlhttp = new XMLHttpRequest();
+          console.log(xmlhttp);
           xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
               document.getElementById("results-div").innerHTML = this.responseText;
+              console.log("READY!");
             }
-          };
-          xmlhttp.open("GET", "findresource.php?searchterm=" + str, true);
-          xmlhttp.send();
+        };
+        xmlhttp.open("GET", 'findresource.php?searchterm=' + str, true);
+        xmlhttp.send();
         }
     }
 
@@ -34,5 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     search_field.addEventListener("keyup", () => {
         findResource();
     });
+    
 
 });
