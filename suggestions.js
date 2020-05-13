@@ -1,4 +1,12 @@
 
+//-----------------------------------
+// ViT 4.20.20 Galvanize Course
+// Student: Darren Short
+// Assignment: Final Project
+// File:  suggestions.js
+//-----------------------------------
+
+// on DOM load completion, get JS ready for use.
 document.addEventListener("DOMContentLoaded", () => {
 
     // func to search for resource
