@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // func to search for resource
     function findResource() {
-        let search = document.getElementById("searchterm");
-        let str = search.value;
+        let str = document.getElementById('searchterm').value;
 
         if (str.length == 0) {
           document.getElementById("results-div").innerHTML = "";
@@ -25,13 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
               document.getElementById("results-div").innerHTML = this.responseText;
             }
           };
-          xmlhttp.open("GET", "findresource.php?r=" + str, true);
+          xmlhttp.open("GET", "findresource.php?searchterm=" + str, true);
           xmlhttp.send();
         }
     }
 
+    let search_field = document.getElementById('searchterm');
     // on each 'key up' stroke, kick off search via findResource().
-    document.addEventListener("keyup", () => {
+    search_field.addEventListener("keyup", () => {
         findResource();
     });
 
