@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: rgb(164, 193, 202);
+    background-color: rgb(173, 219, 233);
     text-align: center;
 
 }
@@ -25,20 +25,19 @@ p#heading {
 }
 
 div#wrapper {
-    width: 40%;
+    display: block;
+    width: 60%;
     display: block;
     border: 2px solid yellow;
     margin: auto;
 }
 
-/* form#search-form {
-    text-align: left;
-    align-content: left;
-    align-items: left;
-} */
+
 
 div#results-div {
+    width: 100%;
     min-height: 300px;
+    padding: 20px;
     margin: auto;
     border: 2px solid greenyellow;
 }

@@ -18,12 +18,14 @@ if(isset($_GET['searchterm']))
   // read json into array.
   $json = file_get_contents($file);
   $json_data = json_decode($json, true);
-  // print_r($json_data);
+
+  echo "<ol>";
   foreach($json_data as $data){
     if(in_array($str, $data["keywords"])){
-      echo "<h3><a target=\"_blank\" href='" . $data["url"] . "'>" . $data["url"] . "</h3>";
+      echo "<li><a target=\"_blank\" href='" . $data["url"] . "' />" . $data["url"];
     }
   }
+  echo "</ol>";
 }
 else { echo "Nothing bro!";}
 ?>
