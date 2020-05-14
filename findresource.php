@@ -32,7 +32,7 @@ if(isset($_GET['searchterm']))
       echo "<li>" . 
             "<a class='newlinks' target='_blank' href='" . 
             $obj["url"] . "'>" . $obj["url"] . 
-            "</a>(<span class='italicize'>" . 
+            "</a>(<span class='italicize keyword-color'>" . 
             $obj["keywords"][0] . 
             "</span>)</li>";
     }          
@@ -44,7 +44,7 @@ if(isset($_GET['searchterm']))
             echo "<li>" . 
                   "<a class='newlinks' target='_blank' href='" . 
                   $json_obj["url"] . "'>" . $json_obj["url"] . 
-                  "</a>(<span class='italicize'>" . 
+                  "</a>(<span class='italicize keyword-color'>" . 
                   $json_obj["keywords"][0] . 
                   "</span>)</li>";
             break;
