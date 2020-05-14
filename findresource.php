@@ -28,7 +28,7 @@ if(isset($_GET['searchterm']))
   foreach($json_data as $json_obj){
     foreach($json_obj["keywords"] as $keyword){
       if(preg_match($regex, $keyword)){
-        echo "<li><a class='links' target='_blank' href='" . $json_obj["url"] . "'>" . $json_obj["url"] . '</a>(<span class="italicize">' . $json_obj["keywords"][0] . '</span>)</li>';
+        echo "<li><a class='newlinks' target='_blank' href='" . $json_obj["url"] . "'>" . $json_obj["url"] . '</a>(<span class="italicize">' . $json_obj["keywords"][0] . '</span>)</li>';
         break;
       }
     }
