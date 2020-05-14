@@ -12,6 +12,7 @@
   
     // create div to put link results.
     let results_div = document.createElement("div");
+    results_div.setAttribute("id", "results-div");
     results_div.innerHTML = "";
 
     // set attributes for results div.
@@ -33,10 +34,10 @@
         target_div.innerHTML = "Nothing Yet...";
         return;
     } else {
-        var xmlhttp = new XMLHttpRequest();
-        console.log(xmlhttp);
+        var jsonhttp = new XMLHttpRequest();
+        console.log(jsonhttp);
         
-        xmlhttp.onreadystatechange = function() {
+        jsonhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             results_div.innerHTML = ""; // clear first
             results_div.innerHTML = this.responseText;  // add server response
@@ -44,25 +45,29 @@
             target_div.appendChild(results_div); // append child to target
           }
         };
-        xmlhttp.open("GET", 'findresource.php?searchterm=' + str, true);
-        xmlhttp.send();
+        jsonhttp.open("GET", 'findresource.php?searchterm=' + str, true);
+        jsonhttp.send();
     }
+
+    let links = document.querySelector(".links");
     // now dress up page with css.
-    dressUpPage();
+    dressUpPage(links);
 } // end findResource().
 
  //----------------------- 'dress' page up --------------------------
-function dressUpPage() {
+function dressUpPage(resdiv) {
     // change background color of page on click of hyperlink.
     let hex_length = 6; // ex. #123456 , #FFFFFF (white), etc
     let hex_digits = "0123456789ABCDEF"; // valid hex chars
-    let links = document.getElementsByClassName('links'); // get all <a> tags
-console.log(links);
+    // let links = document.querySelectorAll("a"); // get all <a> tags
+    console.log(resdiv);
+
+
     // TESTING PURPOSES ONLY
     console.log("HEX DIGITS LENGTH: " + hex_digits.length);
     console.log("LINKS LENGTH: " + links.length);
 
-    // dynamically build hex color code.
+    // dynamically build hex color code. (ex: #ABCDEF)
     for(let i = 0; i < links.length; i++){
         console.log("LINKS LENGTH: " + links.length);
         let hex_bg_color = "#";
