@@ -97,12 +97,12 @@
         "keywords": ["Heroku Home Page", "js", "javascript", "backend", "advanced", "programming", "coding"]
     },
     {
-        "url": "https://github.com/darrenwshort",
-        "keywords": ["Darren Short's Github", "vit", "classmates"]
-    },
-    {
         "url": "https://github.com/carlcorsini/ax",
         "keywords": ["Carl's Axios Example", "carl corsini"]
+    },
+    {
+        "url": "https://github.com/carlcorsini/",
+        "keywords": ["Carl's Github", "classmates", "vit", "galvanize"]
     },
     {
         "url": "https://github.com/rprithie",
@@ -117,16 +117,20 @@
         "keywords": ["Understanding Rest", "article"]
     },
     {
-        "url": "https://github.com/carlcorsini/",
-        "keywords": ["Carl's Github", "classmates", "vit", "galvanize"]
-    },
-    {
         "url": "http://sqr.surge.sh/",
         "keywords": ["Carl's Fancy Square Demo"]
     },
     {
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document",
         "keywords": ["Mozilla DOM Docs"]
+    },
+    {
+        "url": "https://github.com/Limelight-Management-Group",
+        "keywords": ["Wayne Bank's Github", "classmates", "vit"]
+    },
+    {
+        "url": "https://github.com/darrenwshort",
+        "keywords": ["Darren Short's Github", "vit", "classmates"]
     }
 ]
 
