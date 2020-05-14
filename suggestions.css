@@ -9,7 +9,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 30px;
+    margin: 10px;
 }
 
 body {
@@ -18,15 +18,40 @@ body {
     text-align: center;
 }
 
+div#container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 94vw;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 50px;
+}
+
+div#githubdiv {
+    margin: auto;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
 p#heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 45px;
 }
 
-div.wrapper {
+div#wrapper1 {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+div#wrapper2 {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }
 
 div#input-section {
@@ -43,9 +68,8 @@ input#searchterm {
     line-height: 30px;
     font-family: monospace;
     font-size: 20px;
-    border: 1px solid black;
     border-radius: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 2px;
     background-color: beige;
 }
@@ -62,10 +86,16 @@ a {
     /* text-decoration: none; */
     color: rgb(109, 97, 97);
     margin-right: 10px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 5px;
 }
 
+a#githublink {
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    font-weight: 100;
+}
 ol {
     text-align: left;
 }
@@ -75,7 +105,7 @@ li {
     margin: 10px auto;
     margin-left: 0px;
     color: rgb(92, 85, 85);
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 5px;

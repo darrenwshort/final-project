@@ -17,15 +17,13 @@
     console.log("first RESULTS DIV: " + results_div);
 
     // set attributes for results div.
-    results_div.setAttribute("width", "800px");
-    results_div.setAttribute("border", "2px solid pink");
-    results_div.setAttribute("color", "#FFFFFF"); // white
-
-    // set str to user search string.
-    let str = document.getElementById("searchterm").value;
+    results_div.style.margin = "auto";
+    
+    let inp = document.getElementById("searchterm");
+    let str = inp.value;
 
     // get 2nd wrapper where result div will go
-    let target_div = document.getElementsByClassName("wrapper")[1];
+    let target_div = document.querySelector("#wrapper2");
     target_div.innerHTML = ""; // clear out target div
 
     console.log("SEARCH STRING: " + str);
