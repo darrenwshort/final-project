@@ -28,13 +28,14 @@ if(isset($_GET['searchterm']))
 
   // if search is 'all', display everything.
   if(preg_match($regex, 'all')){
-    foreach($json_data as $obj)
-    echo "<li>" . 
-          "<a class='newlinks' target='_blank' href='" . 
-          $obj["url"] . "'>" . $obj["url"] . 
-          "</a>(<span class='italicize'>" . 
-          $obj["keywords"][0] . 
-          "</span>)</li>";
+    foreach($json_data as $obj){
+      echo "<li>" . 
+            "<a class='newlinks' target='_blank' href='" . 
+            $obj["url"] . "'>" . $obj["url"] . 
+            "</a>(<span class='italicize'>" . 
+            $obj["keywords"][0] . 
+            "</span>)</li>";
+    }          
   } else {
       // display relevant content based on search string.
       foreach($json_data as $json_obj){
