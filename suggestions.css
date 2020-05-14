@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(173, 219, 233);
+    background-color: rgb(88, 146, 173);
     text-align: center;
 }
 
@@ -38,6 +38,7 @@ p#heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 45px;
+    color: dimgrey;
 }
 
 div#wrapper1 {
@@ -71,7 +72,7 @@ input#searchterm {
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 2px;
-    background-color: beige;
+    background-color: whitesmoke;
 }
 
 input#searchterm:focus {
@@ -79,12 +80,13 @@ input#searchterm:focus {
 }
 
 label {
-    color: rgb(109, 97, 97);
+    color: beige;
 }
 
 a {
     /* text-decoration: none; */
-    color: rgb(109, 97, 97);
+    /* color: rgb(109, 97, 97); */
+    color: bisque;
     margin-right: 10px;
     /* border: 1px solid yellow; */
     padding: 5px;
@@ -106,8 +108,8 @@ li {
     text-align: left;
     margin: 10px auto;
     margin-left: 0px;
-    color: rgb(92, 85, 85);
-    /* border: 2px solid greenyellow; */
+    /* color: rgb(92, 85, 85); */
+    color: bisque;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 5px;
@@ -130,5 +132,5 @@ span {
 }
 
 .keyword-color {
-    color: greenyellow;
+    color: burlywood;
 }
