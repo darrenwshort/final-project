@@ -13,5 +13,5 @@ Provide easier access to the plethora of code resources of Carl's, from one inte
 * PHP backend on my personal shared hosting
 
 ## Link to app
-* http://waytogoshort.com/ViT/final-project/
+
 
